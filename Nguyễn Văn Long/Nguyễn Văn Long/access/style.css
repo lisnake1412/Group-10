@@ -1,0 +1,58 @@
+* {
+  margin:0;
+  padding:0;
+}
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.card{
+  width: 500px;
+  height: 650px;
+  border-radius: 10px;
+  background: linear-gradient(#17a3ca,#2a5fd4);
+}
+.card img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  margin: 45px auto 15px;
+  position: relative;
+}
+.card h1{
+  color: #ffffff;
+  font-size: 220%;
+
+}
+.card p{
+  color: #ffffff;
+  margin: 20px 40px 20px;
+  font-size: 120%;
+}
+/* .icon-social{
+  position:fixed;
+  display: flex;    
+  flex-direction: column;
+} */
+.icon-social i{
+  padding: 15px;
+  color:#17a3ca;
+  background: #ffffff;
+  border-radius: 60%;
+  margin: 6px 9px 6px 7px;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+.icon-social a {
+  text-decoration: none;
+}
+.icon-social i:hover{
+  transform: scale(0.9);
+}
