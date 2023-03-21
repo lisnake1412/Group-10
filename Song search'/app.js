@@ -5,6 +5,8 @@ var ctrlIcon=document.getElementById("ctrlIcon");
 var title=document.querySelector('.title');
 var artist=document.querySelector('.artist');
 let input = document.getElementById("id");
+var img = document.getElementById("song-img");
+var picture = document.querySelector('.music-player');
 
 input.addEventListener('keypress',function(e){
 	if (e.code ==='Enter'){
@@ -35,7 +37,9 @@ let data2 = await fetch(API2,options).then(res => res.json())
 document.getElementById("song").src = data2.tracks[0].preview_url;
     //  title.innerText = data.results.trackmatches.track[0].name
     //  artist.innerText= data.results.trackmatches.track[0].artist
- document.getElementsByClassName("song-img").src="test.jpg";
+    let image= data.tracks.items[0].data.albumOfTrack.coverArt.sources[0].url
+picture.style.background=`linear-gradient(to top,rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url(${image}) no-repeat center/cover`;
+document.getElementById("song-img").src=data.tracks.items[0].data.albumOfTrack.coverArt.sources[0].url
 title.innerText = data.tracks.items[0].data.name
 artist.innerText= data.tracks.items[0].data.artists.items[0].profile.name
 
