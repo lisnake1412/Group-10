@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0a623f1a1.js" crossorigin="anonymous"></script>
+    <title>document</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="music-player">
+            <input type="text" class="search" id="id" >
+<nav>
+    <div class="circle"> 
+        <i class="fa-solid fa-angle-left"></i>
+    </div>
+    <div class="circle"> 
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</nav>
+<img src="Thumbnail.png" class="song-img">
+<h1 class="title"></h1>
+<p class="artist"></p>
+<audio  id="song">
+     <source src="" type="audio/mpeg">
+</audio >
+<input type="range" value="0"  id="progress" >
+<div class="control">
+    <div><i class="fa-solid fa-backward"></i></div>
+    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+    <div><i class="fa-solid fa-forward"></i></div>
+</div>
+</div>
+    </div>
+    
+    <script src="app.js">
+    </script>
+    <script src="https://e-cdn-files.dzcdn.net/js/min/dz.js"></script>
+    
+    
+</body>
+</html>
